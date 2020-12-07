@@ -19,6 +19,55 @@
 		display: flex;
 		justify-content: space-between;
 		align-items: center;
+
+		@include tablets{
+			margin-top: -95px;
+			height: 100%;
+		}
+
+		&--line{
+			position: relative;
+
+			@include tablets{
+				flex-direction: column;
+				align-items: center;
+				justify-content: flex-start;
+				margin-top: 0;
+			}
+
+			&:after{
+				content: '';
+				display: block;
+				position: absolute;
+				height: 150%;
+				width: 1px;
+				background-color: $blue;
+				top: -25%;
+				right: 50px;
+
+				@include tablets{
+					display: none;
+				}
+			}
+		}
+
+		&--line-mobile{
+			position: relative;
+
+			@include tablets{
+
+				&:after{
+					content: '';
+					display: block;
+					position: absolute;
+					height: 80%;
+					width: 1px;
+					background-color: $blue;
+					top: 10%;
+					right: 200px;
+				}
+			}
+		}
 	}
 
 	&__list-wrap{
@@ -38,24 +87,22 @@
 			right: 200px;
 		}
 
+		&--main{
+
+			@include tablets{
+				display: none;
+			}
+		}
+
 		&--padding{
 			padding-left: 0;
 			padding-right: 100px;
 
-			
-			// padding: 0 120px 0 0;
-			// width: 90%;
-
-			// &:after{
-			// 	content: '';
-			// 	display: block;
-			// 	position: absolute;
-			// 	height: 160%;
-			// 	width: 1px;
-			// 	background-color: $blue;
-			// 	top: -30%;
-			// 	right: 200px;
-			// }
+			@include tablets{
+				flex-direction: column;
+				align-items: center;
+				padding-right: 0;
+			}
 		}
 	}
 
@@ -63,21 +110,44 @@
 		display: flex;
 		flex-direction: column;
 		width: 30%;
+
+		@include tablets{
+			width: 80%;
+			align-items: center;
+			margin-bottom: 50px;
+
+			&:last-of-type{
+				display: none;
+			}
+		}
 	}
 
 	&__img-wrap{
 		margin-bottom: 60px;
+
+		@include tablets{
+			margin-bottom: 30px;
+		}
 	}
 
 	&__img{
 		width: 100%;
 		max-width: 370px;
+
+		@include tablets{
+			max-width: 270px;
+		}
 	}
 
 	&__descr{
 		font-size: 25px;
 		color: #999999;
 		margin: 0 50px;
+
+		@include tablets{
+			max-width: 220px;
+			font-size: 18px;
+		}
 	}
 }
 

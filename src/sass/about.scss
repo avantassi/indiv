@@ -12,6 +12,12 @@
 		position: relative;
 		margin-top: 50px;
 
+		@include tablets{
+			padding: 0 15px;
+			align-items: center;
+			justify-content: space-between;
+		}
+
 		&:after{
 			content: '';
 			display: block;
@@ -20,6 +26,10 @@
 			width: 1px;
 			background-color: $blue;
 			right: 210px;
+
+			@include tablets{
+				display: none;
+			}
 		}
 	}
 
@@ -30,5 +40,11 @@
 		text-align: right;
 		color: #616161;
 		line-height: 50px;
+
+		@include tablets{
+			font-size: 18px;
+			text-align: center;
+			max-width: 400px;
+		}
 	}
 }

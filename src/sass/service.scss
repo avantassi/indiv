@@ -6,6 +6,21 @@
 		display: flex;
 		justify-content: space-between;
 		flex-wrap: wrap;
+
+		@include tablets{
+			flex-direction: column;
+			padding-left: 70px;
+
+			&:before{
+				content: '';
+				display: block;
+				position: absolute;
+				width: 1px;
+				background-color: $blue;
+				height: 65%;
+				left: 45px;
+			}
+		}
 	}
 
 	&__item{
@@ -13,6 +28,11 @@
 		display: flex;
 		flex-direction: column;
 		margin-bottom: 140px;
+
+		@include tablets{
+			width: 100%;
+			margin-bottom: 0;
+		}
 	}
 
 	&__title{
@@ -25,6 +45,10 @@
 	&__list{
 		padding-left: 38px;
 		position: relative;
+
+		@include tablets{
+			display: none;
+		}
 		
 		&:after{
 			content: '';

@@ -7,12 +7,27 @@
 		display: flex;
 		height: 100%;
 		margin-top: -75px;
+
+		.container{
+
+			@include tablets{
+				flex-direction: column;
+				justify-content: center;
+			}
+		}
 	}
 
 	&__bg{
 		position: relative;
 		width: 100%;
 		max-width: 700px;
+		max-height: 700px;
+
+		@include tablets{
+			max-width: 400px;
+			max-height: 400px;
+			order: 3;
+		}
 	}
 }
 
@@ -70,6 +85,18 @@
 		left: auto;
 		right: 201px;
 		bottom: -21%;
+
+		@include tablets{
+			left: 50%;
+			right: auto;
+		}
+	}
+
+	&--service{
+
+		@include tablets{
+			left: 45px;
+		}
 	}
 
 	&--how{
@@ -83,8 +110,25 @@
 	}
 
 	&--projects{
-		right: 3%;
-		bottom: 8%;
+		right: 40px;
+		bottom: -40%;
 		left: auto;
+
+		@include tablets{
+			bottom: 12%;
+			right: auto;
+			left: 50%;
+		}
+	}
+
+	&--projects-mobile{
+		display: none;
+
+		@include tablets{
+			display: block;
+			right: 190px;
+			bottom: 2%;
+			left: auto;
+		}
 	}
 }

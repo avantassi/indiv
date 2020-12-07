@@ -153,17 +153,6 @@ section {
   padding-right: 100px;
 }
 
-.third-title--small:after {
-  content: '';
-  display: block;
-  position: absolute;
-  height: 830%;
-  width: 1px;
-  background-color: #00cbf7;
-  top: -400%;
-  right: 50px;
-}
-
 .fourth-title {
   font-size: 40px;
   color: #d0d0d0;
@@ -214,6 +203,7 @@ section {
 .hamb {
   display: block;
   position: relative;
+  z-index: 20;
 }
 
 #menuToggle {
@@ -326,6 +316,7 @@ section {
   position: relative;
   width: 100%;
   max-width: 700px;
+  max-height: 700px;
 }
 
 .flick-img {
@@ -399,9 +390,13 @@ section {
 }
 
 .scroll--projects {
-  right: 3%;
-  bottom: 8%;
+  right: 40px;
+  bottom: -40%;
   left: auto;
+}
+
+.scroll--projects-mobile {
+  display: none;
 }
 
 .about {
@@ -567,6 +562,25 @@ section {
   align-items: center;
 }
 
+.projects__wrap--line {
+  position: relative;
+}
+
+.projects__wrap--line:after {
+  content: '';
+  display: block;
+  position: absolute;
+  height: 150%;
+  width: 1px;
+  background-color: #00cbf7;
+  top: -25%;
+  right: 50px;
+}
+
+.projects__wrap--line-mobile {
+  position: relative;
+}
+
 .projects__list-wrap {
   display: flex;
   justify-content: space-between;
@@ -701,4 +715,217 @@ section {
 .cookie__link {
   color: #ffffff;
   text-decoration: none;
+}
+
+@media screen and (max-width: 768px) {
+  .container--height {
+    justify-content: flex-start;
+    margin-top: 30px;
+  }
+
+  .first-title {
+    font-size: 48px;
+  }
+
+  .first-title--blue {
+    margin-right: 0;
+  }
+
+  .first-title--small {
+    font-size: 20px;
+  }
+
+  .first-title__wrap {
+    align-items: center;
+    margin-top: 40px;
+  }
+
+  .second-title {
+    font-size: 60px;
+  }
+
+  .third-title {
+    font-size: 36px;
+  }
+
+  .third-title--blue {
+    width: 80%;
+  }
+
+  .third-title--small {
+    padding-right: 0;
+    font-size: 24px;
+  }
+
+  .third-title--small br {
+    display: none;
+  }
+
+  .hero__wrap .container {
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .hero__bg {
+    max-width: 400px;
+    max-height: 400px;
+    order: 3;
+  }
+
+  .scroll--about {
+    left: 50%;
+    right: auto;
+  }
+
+  .scroll--service {
+    left: 45px;
+  }
+
+  .scroll--projects {
+    bottom: 12%;
+    right: auto;
+    left: 50%;
+  }
+
+  .scroll--projects-mobile {
+    display: block;
+    right: 190px;
+    bottom: 2%;
+    left: auto;
+  }
+
+  .about__wrap {
+    padding: 0 15px;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .about__wrap:after {
+    display: none;
+  }
+
+  .about__descr {
+    font-size: 18px;
+    text-align: center;
+    max-width: 400px;
+  }
+
+  .service__wrap {
+    flex-direction: column;
+    padding-left: 70px;
+  }
+
+  .service__wrap:before {
+    content: '';
+    display: block;
+    position: absolute;
+    width: 1px;
+    background-color: #00cbf7;
+    height: 65%;
+    left: 45px;
+  }
+
+  .service__item {
+    width: 100%;
+    margin-bottom: 0;
+  }
+
+  .service__list {
+    display: none;
+  }
+
+  .how__wrap {
+    flex-direction: column;
+    margin-top: 0;
+  }
+
+  .how__title-wrap {
+    height: auto;
+    flex-direction: column-reverse;
+  }
+
+  .how__title-descr {
+    font-size: 18px;
+  }
+
+  .how__list-wrap {
+    padding-left: 0;
+    margin-top: 30px;
+  }
+
+  .how__list-wrap:after {
+    display: none;
+  }
+
+  .how__item {
+    margin-bottom: 25px;
+  }
+
+  .how__item-title {
+    font-size: 24px;
+  }
+
+  .how__item-type {
+    font-size: 14px;
+  }
+
+  .projects__wrap {
+    margin-top: -95px;
+    height: 100%;
+  }
+
+  .projects__wrap--line {
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    margin-top: 0;
+  }
+
+  .projects__wrap--line:after {
+    display: none;
+  }
+
+  .projects__wrap--line-mobile:after {
+    content: '';
+    display: block;
+    position: absolute;
+    height: 80%;
+    width: 1px;
+    background-color: #00cbf7;
+    top: 10%;
+    right: 200px;
+  }
+
+  .projects__list-wrap--main {
+    display: none;
+  }
+
+  .projects__list-wrap--padding {
+    flex-direction: column;
+    align-items: center;
+    padding-right: 0;
+  }
+
+  .projects__item {
+    width: 80%;
+    align-items: center;
+    margin-bottom: 50px;
+  }
+
+  .projects__item:last-of-type {
+    display: none;
+  }
+
+  .projects__img-wrap {
+    margin-bottom: 30px;
+  }
+
+  .projects__img {
+    max-width: 270px;
+  }
+
+  .projects__descr {
+    max-width: 220px;
+    font-size: 18px;
+  }
 }
