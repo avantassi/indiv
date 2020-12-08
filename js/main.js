@@ -2,6 +2,9 @@ var mySwiper = new Swiper('.swiper-container', {
 	// Optional parameters
 	direction: 'horizontal',
 	loop: false,
+	mousewheel: {
+		invert: true,
+	},
   
 	// Navigation arrows
 	navigation: {
@@ -37,3 +40,27 @@ for (var i = 0; i < linkNav.length; i++) {
 $.scrollify({
     section : ".section"
   });
+
+  $(document).on("click", function(e) {
+	if ( ($(e.target).hasClass('burger')) || ($(e.target).hasClass('burger-span')) )
+	  $(".menu").toggleClass("show") &&
+	  $(".burger").toggleClass("burger-show");
+	else
+	  $(".menu").removeClass("show") &&
+	  $(".burger").removeClass("burger-show");
+  });
+
+  $(document).scroll(function() {
+	if ($(".menu").hasClass('show'))
+	  $(".menu").removeClass("show");
+	  $(".burger").removeClass("burger-show");
+  });
+
+  $('.projects--first').on({
+    'mousewheel': function(e) {  
+    if(e.originalEvent.wheelDeltaY<0){
+        e.preventDefault();
+		e.stopPropagation();
+		}
+    }
+})
