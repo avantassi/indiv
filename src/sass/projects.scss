@@ -4,14 +4,6 @@
 
 	&--black{
 		background: #0f0f0f;
-
-		.projects__list-wrap:after{
-			display: none;
-		}
-
-		// .projects__item{
-		// 	width: 25%;
-		// }
 	}
 
 	&__wrap{
@@ -19,62 +11,29 @@
 		display: flex;
 		justify-content: space-between;
 		align-items: center;
+		position: relative;
+		padding-right: 200px;
+
 
 		@include tablets{
-			margin-top: -95px;
+			margin-top: -25px;
 			height: 100%;
+			padding-right: 150px;
 		}
 
-		&--line{
-			position: relative;
+		&--reverse{
+			flex-direction: row-reverse;
 
 			@include tablets{
-				flex-direction: column;
-				align-items: center;
-				justify-content: flex-start;
-				margin-top: 0;
-			}
+				flex-direction: column-reverse;
+				justify-content: center;
+				padding-right: 0;
 
-			&:after{
-				content: '';
-				display: block;
-				position: absolute;
-				height: 150%;
-				width: 1px;
-				background-color: $blue;
-				top: -25%;
-				right: 50px;
-
-				@include tablets{
+				&:after{
 					display: none;
 				}
 			}
 		}
-
-		&--line-mobile{
-			position: relative;
-
-			@include tablets{
-
-				&:after{
-					content: '';
-					display: block;
-					position: absolute;
-					height: 80%;
-					width: 1px;
-					background-color: $blue;
-					top: 10%;
-					right: 200px;
-				}
-			}
-		}
-	}
-
-	&__list-wrap{
-		display: flex;
-		justify-content: space-between;
-		padding: 0 300px 0 100px;
-		position: relative;
 
 		&:after{
 			content: '';
@@ -83,25 +42,23 @@
 			height: 160%;
 			width: 1px;
 			background-color: $blue;
-			top: -30%;
-			right: 200px;
-		}
+			right: 100px;
+			top: -25%;
 
-		&--main{
+			@include tablets{
+				height: 65%;
+				top: 17%;
+			}
+		}
+	}
+
+	&__item-list{
+		display: flex;
+
+		&--mobile{
 
 			@include tablets{
 				display: none;
-			}
-		}
-
-		&--padding{
-			padding-left: 0;
-			padding-right: 100px;
-
-			@include tablets{
-				flex-direction: column;
-				align-items: center;
-				padding-right: 0;
 			}
 		}
 	}
@@ -109,14 +66,22 @@
 	&__item{
 		display: flex;
 		flex-direction: column;
-		width: 30%;
+		padding: 0 20px;
+		text-decoration: none;
+
+		// &--mobile{
+
+		// 	@include tablets{
+		// 		display: none;
+		// 	}
+		// }
 
 		@include tablets{
 			width: 80%;
 			align-items: center;
 			margin-bottom: 50px;
 
-			&:last-of-type{
+			&:nth-last-child(2){
 				display: none;
 			}
 		}
@@ -159,7 +124,16 @@
 	cursor: pointer;
 }
 
-.swiper-slide:last-of-type{
+.swiper-button-prev-custom{
+	position: absolute;
+    top: 49.5%;
+    right: 5%;
+	z-index: 10;
+	cursor: pointer;
+	transform: rotate(180deg);
+}
+
+.swiper-slide-active{
 	z-index: 20;
 }
 

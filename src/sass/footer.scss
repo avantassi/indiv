@@ -3,22 +3,45 @@
 	padding: 120px 100px;
 	position: relative;
 
+	@include tablets{
+		padding: 150px 0 0;
+	}
+
 	&__img-wrap{
 		width: 33%;
+
+		@include tablets{
+			width: auto;
+		}
 	}
 
 	&__about{
 		display: flex;
 		justify-content: space-between;
 		margin-top: 50px;
+
+		@include tablets{
+			flex-direction: column;
+			align-items: center;
+		}
 	}
 }
 
 .logo-wrap{
 	display: flex;
 
+	@include tablets{
+		align-items: center;
+		justify-content: center;
+	}
+
 	.logo{
 		width: 33%;
+		visibility: hidden;
+
+		@include tablets{
+			display: none;
+		}
 	}
 
 	.modal-wrap{
@@ -26,6 +49,10 @@
 		display: flex;
 		justify-content: center;
 		align-items: flex-start;
+
+		@include tablets{
+			width: 60%;
+		}
 	}
 }
 
@@ -33,10 +60,19 @@
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
+
+	@include tablets{
+		flex-direction: column;
+		padding-top: 50px;
+	}
 }
 
 .nav{
 	width: 33%;
+
+	@include tablets{
+		width: 100%;
+	}
 
 	&__link{
 		font-size: 25px;
@@ -45,6 +81,10 @@
 		padding: 20px 0;
 		display: block;
 		text-decoration: none;
+
+		@include tablets{
+			text-align: center;
+		}
 	}
 }
 
@@ -53,6 +93,10 @@
 
 	&__list{
 		display: flex;
+
+		@include tablets{
+			justify-content: center;
+		}
 	}
 
 	&__link{
@@ -63,13 +107,26 @@
 .footer-text{
 	color: #999999;
 	line-height: 42px;
+
+	@include tablets{
+		text-align: center;
+		font-size: 25px;
+	}
 }
 
 .cookie{
 	text-align: right;
 
+	@include tablets{
+		text-align: center;
+		margin: 50px 0;
+		line-height: 24px;
+		font-size: 18px;
+	}
+
 	&__link{
 		color: $white;
 		text-decoration: none;
+
 	}
 }

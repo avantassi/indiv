@@ -9,6 +9,7 @@ var mySwiper = new Swiper('.swiper-container', {
 	// Navigation arrows
 	navigation: {
 	  nextEl: '.swiper-button-next-custom',
+	  prevEl: '.swiper-button-prev-custom',
 	},
   
   })
@@ -64,3 +65,89 @@ $.scrollify({
 		}
     }
 })
+
+$(window).ready(function() {
+	if ( $(window).width() < 768 ) {
+		$('.service__title1').on("click", function(e) {
+			  $(".service__list1").toggleClass("show") 
+		  });
+	}
+  });
+
+  $(window).ready(function() {
+	if ( $(window).width() < 768 ) {
+		$('.service__title2').on("click", function(e) {
+			  $(".service__list2").toggleClass("show") 
+		  });
+	}
+  }); 
+  
+  $(window).ready(function() {
+	if ( $(window).width() < 768 ) {
+		$('.service__title3').on("click", function(e) {
+			  $(".service__list3").toggleClass("show") 
+		  });
+	}
+  }); 
+
+  $(window).ready(function() {
+	if ( $(window).width() < 768 ) {
+		$('.service__title4').on("click", function(e) {
+			  $(".service__list4").toggleClass("show") 
+		  });
+	}
+  }); 
+
+  $(window).ready(function() {
+	if ( $(window).width() < 768 ) {
+		$('.service__title5').on("click", function(e) {
+			  $(".service__list5").toggleClass("show") 
+		  });
+	}
+  }); 
+
+  $(window).ready(function() {
+	if ( $(window).width() < 768 ) {
+		$('.service__title6').on("click", function(e) {
+			  $(".service__list6").toggleClass("show") 
+		  });
+	}
+  }); 
+
+  $(window).ready(function() {
+	if ( $(window).width() < 768 ) {
+		$('.service__title7').on("click", function(e) {
+			  $(".service__list7").toggleClass("show") 
+		  });
+	}
+  }); 
+
+  $(window).ready(function() {
+	if ( $(window).width() < 768 ) {
+		$('.service__title8').on("click", function(e) {
+			  $(".service__list8").toggleClass("show") 
+		  });
+	}
+  }); 
+
+  $(window).ready(function() {
+	if ( $(window).width() < 768 ) {
+		$('.service__title9').on("click", function(e) {
+			  $(".service__list9").toggleClass("show") 
+		  });
+	}
+  }); 
+
+  $(window).ready(function() {
+	if ( $(window).width() < 768 ) {
+		$('.service__title10').on("click", function(e) {
+			  $(".service__list10").toggleClass("show") 
+		  });
+	}
+  }); 
+  
+  $(window).ready(function() {
+	$('.close').on("click", function(e) {
+			$(".service__list").removeClass("show") 
+		});
+  });  

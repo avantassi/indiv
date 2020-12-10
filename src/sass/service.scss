@@ -2,6 +2,10 @@
 	padding: 30px 0;
 	position: relative;
 
+	@include tablets{
+		padding-top: 100px;
+	}
+
 	&__wrap{
 		display: flex;
 		justify-content: space-between;
@@ -40,6 +44,10 @@
 		color: $black;
 		text-transform: uppercase;
 		min-height: 65px;
+
+		@include tablets{
+			cursor: pointer;
+		}
 	}
 
 	&__list{
@@ -47,7 +55,8 @@
 		position: relative;
 
 		@include tablets{
-			display: none;
+			transform: translateX(1000px);
+			position: absolute;
 		}
 		
 		&:after{
@@ -59,6 +68,24 @@
 			background-color: $blue;
 			top: 13px;
 			left: 19px;
+
+			@include tablets{
+				height: 7%;
+				left: 60px;
+				top: 40px;
+			}
+		}
+
+		.close{
+			display: none;
+
+			@include tablets{
+				display: block;
+				position: absolute;
+				right: 10%;
+				top: 0;
+				cursor: pointer;
+			}
 		}
 	}
 
@@ -67,4 +94,17 @@
 		color: #999999;
 		line-height: 40px;
 	}
+}
+
+.service__list.show{
+	transform: translateX(0px);
+	transition: .5s;
+	height: 88%;
+    width: 100%;
+    top: 10%;
+    left: 0;
+    background: white;
+	z-index: 30;
+	padding-left: 100px;
+	padding-top: 30px;
 }

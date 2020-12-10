@@ -145,9 +145,27 @@ section{
 		font-size: 36px;
 	}
 
+	&--service{
+
+		@include tablets{
+			font-size: 60px;
+		}
+	}
+
 	&--blue{
 		color: $blue;
 		margin-bottom: 0;
+		min-width: 340px;
+		text-align: left;
+
+		@include tablets{
+			text-align: right;
+			min-width: auto;
+			width: 100%;
+		}
+	}
+
+	&--projects{
 
 		@include tablets{
 			width: 80%;
@@ -156,14 +174,17 @@ section{
 
 	&--small{
 		font-size: 33px;
-		min-width: 450px;
+		// min-width: 450px;
 		text-decoration: none;
-		position: relative;
-		padding-right: 100px;
+		// position: absolute;
+		// right: 250px;
+		// padding-right: 100px;
+		text-align: right;
 
 		@include tablets{
 			padding-right: 0;
 			font-size: 24px;
+			text-align: center;
 		}
 
 		br{
@@ -181,6 +202,15 @@ section{
 	text-transform: uppercase;
 	text-align: center;
 	width: 33%;
+
+	@include tablets{
+		width: 65%;
+		margin-top: 50px;
+
+		br{
+			display: none;
+		}
+	}
 }
 
 .btn{
