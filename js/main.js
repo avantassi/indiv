@@ -2,9 +2,6 @@ var mySwiper = new Swiper('.swiper-container', {
 	// Optional parameters
 	direction: 'horizontal',
 	loop: false,
-	mousewheel: {
-		invert: true,
-	},
   
 	// Navigation arrows
 	navigation: {
@@ -38,9 +35,15 @@ for (var i = 0; i < linkNav.length; i++) {
   }, false);
 }
 
-$.scrollify({
-    section : ".section"
+$(window).ready(function() {
+	if ( $(window).width() > 768 ) {
+		$.scrollify({
+			section : ".section"
+		  });
+	}
   });
+
+
 
   $(document).on("click", function(e) {
 	if ( ($(e.target).hasClass('burger')) || ($(e.target).hasClass('burger-span')) )
@@ -56,15 +59,6 @@ $.scrollify({
 	  $(".menu").removeClass("show");
 	  $(".burger").removeClass("burger-show");
   });
-
-  $('.projects--first').on({
-    'mousewheel': function(e) {  
-    if(e.originalEvent.wheelDeltaY<0){
-        e.preventDefault();
-		e.stopPropagation();
-		}
-    }
-})
 
 $(window).ready(function() {
 	if ( $(window).width() < 768 ) {

@@ -42,29 +42,6 @@
 	z-index: 20;
 }
 
-// #menuToggle {
-// 	display: block;
-// 	position: absolute;
-// 	top: 2px;
-// 	right: 0;
-// 	z-index: 1;
-// 	-webkit-user-select: none;
-// 	user-select: none;
-// }
-
-// #menuToggle input {
-// 	display: block;
-// 	width: 40px;
-// 	height: 32px;
-// 	position: absolute;
-// 	top: -7px;
-// 	left: -5px;
-// 	cursor: pointer;
-// 	opacity: 0;
-// 	z-index: 2;
-// 	-webkit-touch-callout: none;
-// }
-
 .burger span {
 	display: block;
 	width: 40px;
@@ -105,28 +82,16 @@
 }
 
 .menu {
-	// width: 370px;
-	// border: 1px solid #000;
-	// height: 100vh;
-	// padding: 20px 0 0 20px;
 	transform: translateX(200px);
 	position: absolute;
-	// background: red;
-	// opacity: 0;
 	top: -30px;
-
 	position: absolute;
 	width: 370px;
 	height: 100vh;
-	// top: -32px;
 	padding: 150px 40px 0;
-	// right: -37%;
 	background: $black;
 	list-style-type: none;
 	-webkit-font-smoothing: antialiased;
-	// transform-origin: 0% 0%;
-	// transform: translate(100%, 0);
-	// transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0);
 	opacity: 0;
 	
 	.nav{
@@ -137,43 +102,9 @@
 	}
 }
 
-// #menu a{
-//   text-decoration: none;
-// }
-
 .menu li {
   text-align: right;
 }
-
-// #menuToggle input:checked~ul {
-//   transform: scale(1.0, 1.0);
-//   opacity: 1;
-// }
-
-// .hamb__block{
-
-// }
-
-.menu{
-
-}
-// .menu a{
-// 	display: block;
-// 	margin:10px 0 0 0;
-// 	text-decoration: none;
-// 	font-size: 20px;
-// 	color: $white;
-// }
-
-//   .btn{
-// 	display: inline-block;
-// 	position: absolute;
-// 	top: 30px;
-// 	right: 30px;
-// 	border: 1px solid #ccc;
-// 	padding: 6px 10px;
-// 	cursor: pointer;
-//   }
 
 .show{
 	transform: translateX(-290px);
@@ -183,14 +114,4 @@
 
 .burger{
 	cursor: pointer;
-
-	// &__img{
-	// 	cursor: pointer;
-	// }
-
-	&__close{
-		// position: absolute;
-		// top: 30px;
-		// right: 10px;
-	}
 }

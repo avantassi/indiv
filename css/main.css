@@ -29,7 +29,7 @@ body {
 body {
   margin: 0;
   font-size: 18px;
-  font-family: 'Stolzl', sans-serif;
+  font-family: 'Play', sans-serif;
 }
 
 h1,
@@ -106,7 +106,7 @@ section {
 }
 
 .first-title--lato {
-  font-family: 'Lato', sans-serif;
+  font-family: 'Play', sans-serif;
 }
 
 .first-title--blue {
@@ -168,7 +168,7 @@ section {
   background-color: #000000;
   padding: 15px 40px;
   border: 2px solid #00cbf7;
-  font-family: 'Stolzl', sans-serif;
+  font-family: 'Play', sans-serif;
   border-radius: 50px;
   cursor: pointer;
 }
@@ -707,6 +707,10 @@ section {
 }
 
 @media screen and (max-width: 768px) {
+  section {
+    height: auto;
+  }
+
   .container--height {
     justify-content: flex-start;
     margin-top: 30px;
@@ -714,6 +718,10 @@ section {
 
   .first-title {
     font-size: 48px;
+  }
+
+  .first-title--lato {
+    text-align: center;
   }
 
   .first-title--blue {
@@ -771,7 +779,8 @@ section {
   }
 
   .hero__wrap {
-    margin-top: 0;
+    margin-top: 120px;
+    margin-bottom: 50px;
   }
 
   .hero__wrap .container {
@@ -788,6 +797,7 @@ section {
   .scroll--about {
     left: 50%;
     right: auto;
+    bottom: -10%;
   }
 
   .scroll--service {
@@ -796,10 +806,12 @@ section {
 
   .scroll--how {
     left: 50%;
+    bottom: -10%;
   }
 
   .scroll--footer {
     left: 70%;
+    z-index: 30;
   }
 
   .scroll--projects {
@@ -813,6 +825,10 @@ section {
     right: 135px;
     bottom: 6%;
     left: auto;
+  }
+
+  .about {
+    padding-bottom: 100px;
   }
 
   .about__wrap {
@@ -846,6 +862,7 @@ section {
 
   .service {
     padding-top: 100px;
+    padding-bottom: 100px;
   }
 
   .service__wrap {
@@ -859,7 +876,7 @@ section {
     position: absolute;
     width: 1px;
     background-color: #00cbf7;
-    height: 65%;
+    height: 78%;
     left: 45px;
   }
 
@@ -889,6 +906,10 @@ section {
     right: 10%;
     top: 0;
     cursor: pointer;
+  }
+
+  .how {
+    padding-bottom: 100px;
   }
 
   .how__wrap {
@@ -925,6 +946,10 @@ section {
 
   .how__item-type {
     font-size: 14px;
+  }
+
+  .projects {
+    height: 100vh;
   }
 
   .projects__wrap {

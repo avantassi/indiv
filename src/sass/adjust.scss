@@ -12,7 +12,8 @@ html, body{
 body{
 	margin: 0;
 	font-size: 18px;
-	font-family: 'Stolzl', sans-serif;
+	// font-family: 'Stolzl', sans-serif;
+	font-family: 'Play', sans-serif;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -35,6 +36,10 @@ p {
 
 section{
 	height: 100vh;
+
+	@include tablets{
+		height: auto;
+	}
 }
 
 .container{
@@ -90,7 +95,12 @@ section{
 	}
 
 	&--lato {
-		font-family: 'Lato', sans-serif;
+		// font-family: 'Lato', sans-serif;
+		font-family: 'Play', sans-serif;
+
+		@include tablets{
+			text-align: center;
+		}
 	}
 
 	&--blue{
@@ -174,11 +184,7 @@ section{
 
 	&--small{
 		font-size: 33px;
-		// min-width: 450px;
 		text-decoration: none;
-		// position: absolute;
-		// right: 250px;
-		// padding-right: 100px;
 		text-align: right;
 
 		@include tablets{
@@ -220,7 +226,8 @@ section{
 	background-color: $black;
 	padding: 15px 40px;
 	border: 2px solid $blue;
-	font-family: 'Stolzl', sans-serif;
+	// font-family: 'Stolzl', sans-serif;
+	font-family: 'Play', sans-serif;
 	border-radius: 50px;
 	cursor: pointer;
 }
