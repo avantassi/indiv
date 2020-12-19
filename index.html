@@ -7,9 +7,8 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta name="viewport" content="width=500, user-scalable=0">
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="stylesheet" href="https://unpkg.com/simplebar@latest/dist/simplebar.css"/>
     <link href="https://fonts.googleapis.com/css2?family=Play&display=swap" rel="stylesheet">
-    <!-- <link rel="stylesheet" href="css/onepage-scroll.css"> -->
     <link rel="stylesheet" href="css/main.css">
     <title></title>
 </head>
@@ -19,17 +18,19 @@
     <div class="maincontent">
 
         <section class="hero section" id="hero">
-            <div class="lang">
-                <span class="lang__span">En</span>
+            <div class="container container--row container--align">
+                <div class="logo">
+                    <img src="img/logo_b.png" alt="" class="logo__img">
+                </div>
+                <div class="lang">
+                    <span class="lang__span">En</span>
+                </div>
             </div>
 
             <header class="header">
                 <div class="container">
 
                     <div class="header__wrap">
-                        <div class="logo">
-                            <img src="img/logo_b.png" alt="" class="logo__img">
-                        </div>
                         <div class="header__descr">
                             <div id="menu" class="menu">
                                 <nav class="nav">
@@ -39,7 +40,7 @@
                                         <li class="nav__item"><a href="#projects" class="nav__link">Проекты</a></li>
                                         <li class="nav__item"><a href="#footer" class="nav__link">Контакты</a></li>
                                     </ul>
-                                    <button class="btn open-modal">
+                                    <button class="btn modal-open">
                                         Оставить заявку
                                     </button>
                                     <div class="social">
@@ -56,40 +57,8 @@
                                 <span class="burger-span"></span>
                                 <span class="burger-span"></span>
                                 <span class="burger-span"></span>
-                                <!-- <img src="img/burger.png" alt="" class="burger__img">
-                                <img src="img/close.png" alt="" class="burger__close visible-no"> -->
                               </div>
-                            <!-- Hamburger -->
-                            <!-- <div class="hamb">
-                                <nav role='navigation'>
-                                    <div id="menuToggle">
-                                        <input type="checkbox" />
-                                        <span></span>
-                                        <span></span>
-                                        <span></span>
-                                        <ul id="menu">
-                                            <nav class="nav">
-                                                <ul class="nav__menu">
-                                                    <li class="nav__item"><a href="#hero" class="nav__link">Главная</a></li>
-                                                    <li class="nav__item"><a href="#service" class="nav__link">Услуги</a></li>
-                                                    <li class="nav__item"><a href="#projects" class="nav__link">Проекты</a></li>
-                                                    <li class="nav__item"><a href="#footer" class="nav__link">Контакты</a></li>
-                                                </ul>
-                                                <button class="btn open-modal">
-                                                    Оставить заявку
-                                                </button>
-                                                <div class="social">
-                                                    <ul class="social__list">
-                                                        <li class="social__item"><a href="" class="social__link"><img src="img/mail.png" alt="" class="social__img"></a></li>
-                                                        <li class="social__item"><a href="" class="social__link"><img src="img/whatsapp.png" alt="" class="social__img"></a></li>
-                                                        <li class="social__item"><a href="" class="social__link"><img src="img/tg.png" alt="" class="social__img"></a></li>
-                                                    </ul>
-                                                </div>
-                                            </nav>
-                                        </ul>
-                                    </div>
-                                </nav>
-                            </div>   -->
+                            
                         </div>
                     </div>
 
@@ -238,51 +207,6 @@
 
         <section class="how section" id="how">
 
-            <header class="header">
-                <div class="container">
-
-                    <div class="header__wrap">
-                        <div class="logo">
-                            <img src="img/logo_b.png" alt="" class="logo__img">
-                        </div>
-                        <div class="header__descr">
-                            <!-- Hamburger -->
-                            <div class="hamb">
-                                <nav role='navigation'>
-                                    <div id="menuToggle">
-                                        <input type="checkbox" />
-                                        <span></span>
-                                        <span></span>
-                                        <span></span>
-                                        <ul id="menu">
-                                            <nav class="nav">
-                                                <ul class="nav__menu">
-                                                    <li class="nav__item"><a href="#hero" class="nav__link">Главная</a></li>
-                                                    <li class="nav__item"><a href="#service" class="nav__link">Услуги</a></li>
-                                                    <li class="nav__item"><a href="#projects" class="nav__link">Проекты</a></li>
-                                                    <li class="nav__item"><a href="#footer" class="nav__link">Контакты</a></li>
-                                                </ul>
-                                                <button class="btn open-modal">
-                                                    Оставить заявку
-                                                </button>
-                                                <div class="social">
-                                                    <ul class="social__list">
-                                                        <li class="social__item"><a href="" class="social__link"><img src="img/mail.png" alt="" class="social__img"></a></li>
-                                                        <li class="social__item"><a href="" class="social__link"><img src="img/whatsapp.png" alt="" class="social__img"></a></li>
-                                                        <li class="social__item"><a href="" class="social__link"><img src="img/tg.png" alt="" class="social__img"></a></li>
-                                                    </ul>
-                                                </div>
-                                            </nav>
-                                        </ul>
-                                    </div>
-                                </nav>
-                            </div>  
-                        </div>
-                    </div>
-
-                </div>
-            </header>
-
             <div class="container container--height">
                 <div class="how__wrap">
                     <div class="how__title-wrap">
@@ -423,7 +347,7 @@
                         <img src="img/logo_b.png" alt="" class="logo__img">
                     </div>
                     <div class="modal-wrap">
-                        <button class="btn open-modal">
+                        <button class="btn modal-open">
                             Оставить заявку
                         </button>
                     </div>
@@ -464,12 +388,89 @@
             </div>
         </section>
 
+        <div id="modal1" class="modal">
+            <div class="dialog">
+                <div class="modal-content">
+                <div class="modal-header">
+                    <h3 class="modal__title">Выберите услуги</h3>
+                    <img src="img/close-dialog.png" alt="" class="close-dialog">
+                </div>
+                <div class="modal-body">   
+                    <form action="" class="form">
+                        <div class="modal-scroll" id="modal-scroll">
+                            <div class="modal__row">
+                                <label class="checkbox">
+                                    <input type="checkbox" />
+                                    <div class="checkbox__text">Создание сайта</div>
+                                </label>
+                                
+                                <label class="checkbox">
+                                    <input type="checkbox" />
+                                    <div class="checkbox__text">Продвижение</div>
+                                </label>
+
+                                <label class="checkbox">
+                                    <input type="checkbox" />
+                                    <div class="checkbox__text">Создание сайта</div>
+                                </label>
+                            </div>
+
+                            <div class="modal__row">
+                                <label class="checkbox">
+                                    <input type="checkbox" />
+                                    <div class="checkbox__text">SMM</div>
+                                </label>
+                                
+                                <label class="checkbox">
+                                    <input type="checkbox" />
+                                    <div class="checkbox__text">Аутсорс и всякий текст</div>
+                                </label>
+
+                                <label class="checkbox">
+                                    <input type="checkbox" />
+                                    <div class="checkbox__text">SMM</div>
+                                </label>
+                            </div>
+
+                            <div class="modal__row">
+                                <label class="checkbox">
+                                    <input type="checkbox" />
+                                    <div class="checkbox__text">Контекстная реклама</div>
+                                </label>
+                                
+                                <label class="checkbox">
+                                    <input type="checkbox" />
+                                    <div class="checkbox__text">Парсинг</div>
+                                </label>
+
+                                <label class="checkbox">
+                                    <input type="checkbox" />
+                                    <div class="checkbox__text">Много-много текста текст большой</div>
+                                </label>
+                            </div>
+                        </div>
+
+                        <div class="modal__row modal__row--input">
+                            <input type="text" class="modal__input" placeholder="Ваше имя">
+                            <input type="text" class="modal__input" placeholder="Телефон" required>
+                            <input type="text" class="modal__input" placeholder="E-mail" required>
+                        </div>
+                        <button class="btn btn--order">Оставить заявку</button>
+                    </form>
+                </div>
+                </div>
+            </div>
+            </div>
+        </div> 
+
     </div>
 </div>
 
 <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
 <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 <script src="js/jquery.scrollify.js"></script>
+<script src="js/project-scroll_slide.js"></script>
+<script src="https://unpkg.com/simplebar@latest/dist/simplebar.min.js"></script>
 <script src="js/main.js"></script>
 </body>
 </html>

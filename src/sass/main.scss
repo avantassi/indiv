@@ -1,11 +1,12 @@
 $notebook: 970px;
 $tablets: 768px;
-$phones: 500px;
+$phones: 400px;
 
 @import "var.scss";
 @import "fonts.scss";
 @import "media.scss";
 @import "adjust.scss";
+@import "modal.scss";
 
 @import "header.scss";
 

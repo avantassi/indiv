@@ -5,7 +5,10 @@
 
 	&__wrap{
 		display: flex;
-		justify-content: space-between;
+		justify-content: flex-end;
+		position: absolute;
+		right: 40px;
+		top: -72px;
 	}
 
 	&__descr{
@@ -93,6 +96,7 @@
 	list-style-type: none;
 	-webkit-font-smoothing: antialiased;
 	opacity: 0;
+	transition: 1s;
 	
 	.nav{
 		width: 100%;
@@ -108,7 +112,7 @@
 
 .show{
 	transform: translateX(-290px);
-	transition: 2s;
+	transition: 1s;
 	opacity: 1;
 }
 

@@ -1,0 +1,209 @@
+.form{
+	display: flex;
+	flex-direction: column;
+}
+
+.is-open-modal {
+	overflow: hidden;
+}
+.modal {
+	box-sizing: border-box;
+	position: fixed;
+	z-index: 1000;
+	background: rgba(0,0,0, 0.7);
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	overflow: auto;
+	padding: 3rem;
+	display: none;
+	
+	&__title{
+		font-size: 33px;
+		color: $white;
+		text-transform: uppercase;
+		text-align: center;
+		width: 100%;
+	}
+
+	&__row{
+		display: flex;
+		justify-content: space-between;
+		margin: 10px 0;
+		min-height: 40px;
+
+		@include tablets{
+			margin: 0;
+		}
+
+		@include tablets{
+			flex-direction: column;
+		}
+
+		&--input{
+			margin: 30px 0;
+
+			@include tablets{
+				margin: 30px 0;
+				align-items: center;
+			}
+		}
+	}
+
+	&__input{
+		width: 230px;
+		background: transparent;
+		border: none;
+		border-bottom: 1px solid $blue;
+		font-style: italic;
+		font-size: 16px;
+		color: #b3b3b3;
+		padding: 10px 10px 10px 20px;
+	}
+}
+
+.modal.is-open {
+	display: block;
+}
+
+.dialog {
+	box-sizing: border-box;
+	width: max-content;
+	min-width: 920px;
+	background: $white;
+	position: relative;
+	left: 50%;
+	top: 20%;
+	margin-left: -460px;
+	padding: 40px 60px 20px;
+	background: $black;
+	border: 1px solid $white;
+
+	@include tablets{
+		min-width: 420px;
+		margin-left: -210px;
+	}
+}
+
+.modal-body{
+    display: flex;
+    flex-direction: column;
+}
+
+.modal-header{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-bottom: 40px;
+	position: relative;
+}
+
+.close-dialog{
+	cursor: pointer;
+	position: absolute;
+	right: -14%;
+	top: -220%;
+
+	@include tablets{
+		right: -35%;
+	}
+}
+
+.checkbox{
+	width: 230px;
+
+	@include tablets{
+		margin-bottom: 15px;
+	}
+}
+
+.checkbox input {
+	position: absolute;
+	z-index: -1;
+	opacity: 0;
+	margin: 10px 0 0 20px;
+}
+.checkbox__text {
+	position: relative;
+	padding: 0 0 0 60px;
+	cursor: pointer;
+	color: #b3b3b3;
+	font-size: 16px;
+}
+.checkbox__text:before {
+	content: '';
+	position: absolute;
+	top: 4px;
+	left: 0;
+	width: 35px;
+	height: 10px;
+	border-radius: 13px;
+	background: #3e3e3e;
+	box-shadow: inset 0 2px 3px rgba(0,0,0,.2);
+	transition: .2s;
+}
+.checkbox__text:after {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 2px;
+	width: 18px;
+	height: 18px;
+	border-radius: 10px;
+	background: #b3b3b3;
+	box-shadow: 0 2px 5px rgba(0,0,0,.3);
+	transition: .2s;
+}
+.checkbox input:checked + .checkbox__text:before {
+	background: #b3b3b3;
+}
+.checkbox input:checked + .checkbox__text:after {
+	left: 20px;
+	background: $blue;
+}
+.checkbox input:focus + .checkbox__text:before {
+	// box-shadow: inset 0 2px 3px rgba(0,0,0,.2), 0 0 0 3px rgba(255,255,0,.7);
+}
+
+.modal-scroll{
+
+	@include tablets{
+		height: 200px;
+	}
+}
+
+.simplebar-scrollbar::before {
+	background-color: $blue;
+  }
+
+.simplebar-scrollbar.simplebar-visible:before{
+	opacity: 1;
+}  
+
+// .ss-scroll{
+// 	background: $blue;
+// 	opacity: 1;
+// }
+
+// .ss-hidden {
+// 	display: none;
+//   }
+  
+//   .ss-container:hover .ss-scroll,
+//   .ss-container:active .ss-scroll {
+// 	opacity: 1;
+//   }
+  
+//   .ss-grabbed {
+// 	-o-user-select: none;
+// 	-ms-user-select: none;
+// 	-moz-user-select: none;
+// 	-webkit-user-select: none;
+// 	user-select: none;
+//   }
+
+//   .ss-content{
+// 	overflow-x: auto;
+// 	overflow-y: scroll;
+//   }
