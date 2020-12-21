@@ -179,12 +179,10 @@ $(window).ready(function() {
 	
 });  
 
-// $(window).ready(function() {
-// 	if ( $(window).width() < 768 ) {
-// 		var el = document.querySelector('.modal-scroll');
-//   		SimpleScrollbar.initEl(el);
-// 	}
-//   }); 
+// var $body = $(document.body);
+// var oldWidth = $body.innerWidth();
+// $body.css("overflow", "hidden");
+// $body.width(oldWidth);
 
 $(window).ready(function() {
 	if ( $(window).width() < 768 ) {

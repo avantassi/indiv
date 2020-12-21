@@ -63,31 +63,55 @@
 	font-weight: bold;
     color: $white;
 	width: 100%;
-	height: 99%;
+	height: 95%;
 }
 
  @keyframes flick {
-	0%{background-color: #2487ca;}
-	1%{background-color: #2283c3;}
-	2%{background-color: #1f74ad;}
-	80%{background-color: #1f74ad;}	 
-	90%{background-color: #2283c3;}	 
-	100%{background-color: #2487ca;}	 
+	0%{background-color: #1E90FF;}  
+
+	25%{background-color: #FF00FF;}     
+	26%{background-color: #A9A9A9;}
+	27%{background-color: #FF00FF;}  
+	29%{background-color: #dfdfdf;}
+	30%{background-color: #FF00FF;}
+	
+	62%{background-color: #FF0000;}     
+	63%{background-color: #A9A9A9;}
+	64%{background-color: #FF0000;}  
+	66%{background-color: #dfdfdf;}
+	67%{background-color: #FF0000;}
+	
+	95%{background-color: #1E90FF;}     
+	96%{background-color: #A9A9A9;}
+	97%{background-color: #1E90FF;}  
+	99%{background-color: #dfdfdf;}
+	
+	100%{background-color: #1E90FF;}	 
 }
 
-// @-webkit-keyframes flick {
-// 	0%{background-color: #2487ca;}
-// 	10%{background-color: #2283c3;}
-// 	20%{background-color: #1f74ad;}
-// 	30%{background-color: #1b6698;} 
-// 	40%{background-color: #175782;}
-// 	50%{background-color: #13496c;}	 
-// 	60%{background-color: #175782;}	 
-// 	70%{background-color: #1b6698;}	 
-// 	80%{background-color: #1f74ad;}	 
-// 	90%{background-color: #2283c3;}	 
-// 	100%{background-color: #2487ca;}	 
-// }
+@-webkit-keyframes flick {
+	0%{background-color: #1E90FF;}  
+
+	25%{background-color: #FF00FF;}     
+	26%{background-color: #A9A9A9;}
+	27%{background-color: #FF00FF;}  
+	29%{background-color: #dfdfdf;}
+	30%{background-color: #FF00FF;}
+	
+	62%{background-color: #FF0000;}     
+	63%{background-color: #A9A9A9;}
+	64%{background-color: #FF0000;}  
+	66%{background-color: #dfdfdf;}
+	67%{background-color: #FF0000;}
+	
+	95%{background-color: #1E90FF;}     
+	96%{background-color: #A9A9A9;}
+	97%{background-color: #1E90FF;}  
+	99%{background-color: #dfdfdf;}
+	
+	100%{background-color: #1E90FF;}
+	 
+}
 
 .scroll{
 	position: absolute;

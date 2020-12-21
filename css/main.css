@@ -256,7 +256,8 @@ section {
   margin-left: -460px;
   padding: 40px 60px 20px;
   background: #000000;
-  border: 1px solid #ffffff;
+  border: 1px solid #c1c1c1;
+  border-radius: 5px;
 }
 
 .modal-body {
@@ -493,32 +494,138 @@ section {
   font-weight: bold;
   color: #ffffff;
   width: 100%;
-  height: 99%;
+  height: 95%;
 }
 
 @keyframes flick {
   0% {
-    background-color: #2487ca;
+    background-color: #1E90FF;
   }
 
-  1% {
-    background-color: #2283c3;
+  25% {
+    background-color: #FF00FF;
   }
 
-  2% {
-    background-color: #1f74ad;
+  26% {
+    background-color: #A9A9A9;
   }
 
-  80% {
-    background-color: #1f74ad;
+  27% {
+    background-color: #FF00FF;
   }
 
-  90% {
-    background-color: #2283c3;
+  29% {
+    background-color: #dfdfdf;
+  }
+
+  30% {
+    background-color: #FF00FF;
+  }
+
+  62% {
+    background-color: #FF0000;
+  }
+
+  63% {
+    background-color: #A9A9A9;
+  }
+
+  64% {
+    background-color: #FF0000;
+  }
+
+  66% {
+    background-color: #dfdfdf;
+  }
+
+  67% {
+    background-color: #FF0000;
+  }
+
+  95% {
+    background-color: #1E90FF;
+  }
+
+  96% {
+    background-color: #A9A9A9;
+  }
+
+  97% {
+    background-color: #1E90FF;
+  }
+
+  99% {
+    background-color: #dfdfdf;
   }
 
   100% {
-    background-color: #2487ca;
+    background-color: #1E90FF;
+  }
+}
+
+@-webkit-keyframes flick {
+  0% {
+    background-color: #1E90FF;
+  }
+
+  25% {
+    background-color: #FF00FF;
+  }
+
+  26% {
+    background-color: #A9A9A9;
+  }
+
+  27% {
+    background-color: #FF00FF;
+  }
+
+  29% {
+    background-color: #dfdfdf;
+  }
+
+  30% {
+    background-color: #FF00FF;
+  }
+
+  62% {
+    background-color: #FF0000;
+  }
+
+  63% {
+    background-color: #A9A9A9;
+  }
+
+  64% {
+    background-color: #FF0000;
+  }
+
+  66% {
+    background-color: #dfdfdf;
+  }
+
+  67% {
+    background-color: #FF0000;
+  }
+
+  95% {
+    background-color: #1E90FF;
+  }
+
+  96% {
+    background-color: #A9A9A9;
+  }
+
+  97% {
+    background-color: #1E90FF;
+  }
+
+  99% {
+    background-color: #dfdfdf;
+  }
+
+  100% {
+    background-color: #1E90FF;
   }
 }
 
@@ -876,6 +983,28 @@ section {
 .cookie__link {
   color: #ffffff;
   text-decoration: none;
+}
+
+@media screen and (max-width: 1300px) {
+  .first-title {
+    font-size: 48px;
+  }
+}
+
+@media screen and (max-width: 1100px) {
+  .first-title {
+    font-size: 38px;
+  }
+}
+
+@media screen and (max-width: 990px) {
+  .first-title {
+    font-size: 28px;
+  }
+
+  .first-title--small {
+    font-size: 18px;
+  }
 }
 
 @media screen and (max-width: 768px) {

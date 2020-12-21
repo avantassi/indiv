@@ -89,6 +89,18 @@ section{
 	color: $white;
 	text-transform: uppercase;
 
+	@include notebook{
+		font-size: 48px;
+	}
+
+	@include notebook-m{
+		font-size: 38px;
+	}
+
+	@include notebook-s{
+		font-size: 28px;
+	}
+
 	@include tablets{
 		font-size: 48px;
 	}
@@ -126,6 +138,10 @@ section{
 		text-transform: none;
 		font-size: 25px;
 		color: #979797;
+
+		@include notebook-s{
+			font-size: 18px;
+		}
 
 		@include tablets{
 			font-size: 20px;

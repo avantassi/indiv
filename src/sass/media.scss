@@ -3,6 +3,18 @@
       @content;
     }
   }
+
+  @mixin notebook-m {
+    @media screen and (max-width: $notebook-m) {
+      @content;
+    }
+  }
+
+  @mixin notebook-s {
+    @media screen and (max-width: $notebook-s) {
+      @content;
+    }
+  }
   
   @mixin tablets {
     @media screen and (max-width: $tablets) {
